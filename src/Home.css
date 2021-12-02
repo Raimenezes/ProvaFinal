@@ -31,3 +31,42 @@ button{
     margin-right:30px ;
     width: 200px;
 }
+
+.content{
+    grid-area: content;
+    display: grid;
+    grid-template-rows: 300px 300px;
+    grid-template-areas:
+    "text register"
+    "secao secao"
+;
+    background-color:white;
+    color:#848484;
+    font-family: Helvetica;
+}
+
+.text{
+    grid-area: text;
+    padding-left: 200px;
+    padding-right: 100px;
+}
+
+.register{
+    grid-area: register;
+    padding-right: 150px;
+}
+
+.secao{
+    grid-area: secao;
+    padding-top: 150px;
+}
+
+.button{
+    padding-top: 5px;
+    width: 300px;
+}
+
+.secao_text{
+    text-align: center;
+}
+

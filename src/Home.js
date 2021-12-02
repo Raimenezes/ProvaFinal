@@ -1,6 +1,7 @@
 import {Component} from "react";
 import Header from "./Header";
 import "./Home.css"
+import Meio from "./Meio";
 
 
 export default class Home extends Component{
@@ -8,7 +9,9 @@ export default class Home extends Component{
       return(
          <div class="estrutura">
              <Header/>
+             <Meio/>
          </div>
+
       )
     }
 }
