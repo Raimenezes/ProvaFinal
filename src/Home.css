@@ -1,0 +1,33 @@
+.estrutura{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+        "header header"
+        "content content"
+        "compra compra"
+        "footer footer"
+;
+}
+
+.header{
+    grid-area: header;
+    grid-template-columns: 1fr 63%;
+    background-color: #6E6E6E;
+    color: white;
+    margin-bottom: 15px;
+    text-align: center;
+    padding-bottom: 15px;
+    font-family: Helvetica;
+}
+
+button{
+    background-color: #E6E6E6;
+    color: #585858;
+    padding: 10px;
+    flex-wrap: wrap;
+    border-radius: 5px;
+    font-size: medium;
+    margin-left:3px ;
+    margin-right:30px ;
+    width: 200px;
+}
