@@ -2,7 +2,7 @@
 
 function Meio(){
     return(
-        <div className="content">
+        <main className="content">
             <div className="text">
                 <h3>Ajude o algorítimo a ser mais certeiro</h3>
                 <p>Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for
@@ -44,7 +44,7 @@ function Meio(){
                     <hr></hr>
                 </div>
             </div>
-        </div>
+        </main>
     );
 }
 export default Meio;

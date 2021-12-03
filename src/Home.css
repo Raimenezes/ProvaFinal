@@ -70,3 +70,28 @@ button{
     text-align: center;
 }
 
+.compra{
+    grid-area: compra;
+}
+
+.item_compra{
+    margin: 10px;
+    padding-left: 50px;
+}
+
+.button2{
+    padding: 5px;
+    width: 250px;
+}
+
+.compra{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-columns:
+        "item_compra item_compra"
+        "mais mais mais mais"
+;
+    background-color:white;
+    color:#848484;
+    font-family: Helvetica;
+}

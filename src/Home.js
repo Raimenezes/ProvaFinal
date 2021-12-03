@@ -2,6 +2,7 @@ import {Component} from "react";
 import Header from "./Header";
 import "./Home.css"
 import Meio from "./Meio";
+import Compras from "./Compras"
 
 
 export default class Home extends Component{
@@ -10,6 +11,7 @@ export default class Home extends Component{
          <div class="estrutura">
              <Header/>
              <Meio/>
+             <Compras/>
          </div>
 
       )
