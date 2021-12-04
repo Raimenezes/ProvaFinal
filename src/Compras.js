@@ -123,6 +123,7 @@ function Compras(){
                     <p>ou 2x de R$9,99</p>
                     <button className="button2">Comprar</button>
             </div>
+
         </main>
     )
 }

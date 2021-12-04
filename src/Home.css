@@ -5,31 +5,27 @@
         "header header"
         "content content"
         "compra compra"
-        "footer footer"
+        "teste teste"
 ;
+}
+
+.completo{
+    display: grid;
+}
+
+.teste{
+    grid-area: teste;
 }
 
 .header{
     grid-area: header;
     grid-template-columns: 1fr 63%;
     background-color: #6E6E6E;
-    color: white;
+    color: #FFFFFF;
     margin-bottom: 15px;
     text-align: center;
     padding-bottom: 15px;
-    font-family: Helvetica;
-}
-
-button{
-    background-color: #E6E6E6;
-    color: #585858;
-    padding: 10px;
-    flex-wrap: wrap;
-    border-radius: 5px;
-    font-size: medium;
-    margin-left:3px ;
-    margin-right:30px ;
-    width: 200px;
+    font-family: normal normal bold 40px/49px Helvetica Neue;
 }
 
 .content{
@@ -45,6 +41,59 @@ button{
     font-family: Helvetica;
 }
 
+@media (max-width:768px){
+    .content{
+        grid-template-columns: 100%;
+        grid-template-areas:
+        "text"
+        "register"
+    }
+    .register{
+        padding-left: 190px;
+    }
+}
+@media (max-width:990px){
+    .content{
+        grid-template-columns: 100%;
+        grid-template-areas:
+
+        "text"
+        "register"
+    }
+    .register{
+        padding-left: 190px;
+    }
+}
+
+
+@media (max-width:574px){
+    .content{
+        grid-template-columns: 100%;
+        grid-template-areas:
+        "text"
+        "register"
+    }
+    .text{
+        font-size: 12px;
+    }
+    .register{
+        padding-left: 70px;
+        padding-top: 60px;
+    }
+}
+
+button{
+    background-color: #E6E6E6;
+    color: #585858;
+    padding: 10px;
+    flex-wrap: wrap;
+    border-radius: 5px;
+    font-size: medium;
+    margin-left:3px ;
+    margin-right:30px ;
+    width: 200px;
+}
+
 .text{
     grid-area: text;
     padding-left: 200px;
@@ -56,20 +105,58 @@ button{
     padding-right: 150px;
 }
 
-.secao{
-    grid-area: secao;
-    padding-top: 150px;
-}
 
 .button{
     padding-top: 5px;
     width: 300px;
 }
 
-.secao_text{
-    text-align: center;
+.campo{
+    width: 300px;
 }
 
+.secao{
+    grid-area: secao;
+    padding-top: 150px;
+}
+
+.compra{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+        "item_compra item_compra"
+        "mais mais mais mais"
+;
+    background-color:white;
+    color:#848484;
+    font-family: Helvetica;
+}
+
+@media (max-width:1024px){
+    .compra{
+        grid-template-columns: 50% 50%;
+        grid-template-areas:
+        "item_compra item_compra"
+    }
+}
+
+@media (max-width:644px){
+    .compra{
+        grid-template-columns: 100%;
+        grid-template-areas:
+        "item_compra";
+    }
+    .register{
+        padding-top: 50px;
+    }
+    .amigos{
+        grid-template-rows: 100%;
+        grid-template-areas:
+        "item1"
+        "item2";
+    }
+
+}
 .compra{
     grid-area: compra;
 }
@@ -79,19 +166,74 @@ button{
     padding-left: 50px;
 }
 
+.secao_text{
+    text-align: center;
+}
+
+img{
+    width: 250px;
+    height: 150px;
+}
+
 .button2{
     padding: 5px;
     width: 250px;
 }
 
-.compra{
+.mais{
+    grid-area: mais;
+    background-color: #E6E6E6;
+    color: #585858;
+    padding: 10px;
+    flex-wrap: wrap;
+    border-radius: 5px;
+    font-size: medium;
+    margin-left:3px ;
+    margin-right:30px ;
+    width: 500px;
+    align-items: center;
+}
+
+.produtos{
     display: grid;
-    grid-template-columns: 25% 25% 25% 25%;
-    grid-template-columns:
-        "item_compra item_compra"
-        "mais mais mais mais"
+    margin: 50px;
+    width: 300px
+}
+
+.novidade{
+    text-align: center;
+    color:#848484;
+    font-family: Helvetica;
+}
+
+.amigos{
+    grid-area: content;
+    display: grid;
+    grid-template-rows: 50% 50%;
+    grid-template-areas:
+    "item1 item2"
 ;
     background-color:white;
     color:#848484;
     font-family: Helvetica;
+    text-align: center;
+    font-family: Helvetica;
+
 }
+
+.item1{
+    grid-area: item1;
+}
+
+.item2{
+    grid-area:item2;
+}
+
+.footer{
+    grid-area: footer;
+    background-color:#6E6E6E;
+    text-align: center;
+    color: white;
+    font-family: Helvetica;
+}
+
